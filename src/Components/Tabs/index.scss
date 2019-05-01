@@ -1,0 +1,32 @@
+.mh-tabs {
+  height: 39px;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  padding: 0 5px 1px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &__tab {
+    height: 39px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    padding: 0 5px 1px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    top: 1px;
+    text-decoration: none;
+
+    &--active {
+      border-bottom-color: #498491;
+    }
+  }
+}

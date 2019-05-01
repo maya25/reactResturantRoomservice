@@ -1,0 +1,59 @@
+.mh-modal {
+  background: white;
+  border-radius: $mh-border-radius;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
+  height: 28vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  width: 80%;
+
+  &__wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #ffffff8a;
+    padding: 18vh 0 0 0;
+    justify-content: center;
+  }
+
+  &__title {
+    padding: 8px 0;
+    text-align: center;
+    background: $mh-blue-light;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &__content {
+    color: $mh-grey-dark;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  &__actions {
+    border-top: 1px solid $mh-grey-light;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button {
+      border: none;
+      background: none;
+      flex-basis: 30%;
+      height: 100%;
+      font-size: 1.2rem;
+      color: $mh-grey-dark;
+    }
+  }
+
+  &__btn--full-width {
+    flex: 1;
+  }
+}

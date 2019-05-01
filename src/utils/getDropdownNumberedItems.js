@@ -1,0 +1,1 @@
+export default (amount) => [...Array(amount+1).keys()].map(e => ({ label: `${e}`, value: e })).filter(e => !!e.value)

@@ -1,0 +1,114 @@
+$mh-blue-dark: #1a6b7c;
+$mh-blue-light: #74b5c2;
+$mh-grey-dark: #7a8182;
+$mh-grey-light: #adb7b8;
+$mh-grey-xlight: #cbd6d7;
+$mh-grey-xxlight: #eaeaea;
+$bg-main: linear-gradient(to bottom, $mh-blue-light 1%,#d9e3e5 100%);
+$mh-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+$mh-border-radius: 5px;
+$mh-border-radius--l: 30px;
+
+html,
+body {
+  overflow: hidden;
+}
+
+p {
+  text-align: right;
+}
+
+body,
+html,
+#root,
+.mh-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.mh-container {
+  background: $bg-main;
+  padding: 42px 20px 20px 20px;
+
+  &--no-gradient {
+    background: $mh-blue-light;
+  }
+
+  &--no-padding {
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.mh-flex {
+  display: flex;
+
+  &-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mh-align-center {
+  align-items: center;
+}
+
+.mh-flex--justify-center {
+  justify-content: center;
+}
+.mh-flex--justify-between {
+  justify-content: space-between;
+}
+.mh-flex--justify-end {
+  justify-content: flex-end;
+}
+
+.mh-tabbed-page__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mh-spacer {
+  display: flex;
+  flex: 1;
+}
+
+//
+@import "~react-datetime/css/react-datetime.css";
+
+//Components
+@import 'Components/Button/index';
+@import 'Components/Dropdown/index';
+@import 'Components/Icon/index';
+@import 'Components/Input/index';
+@import 'Components/Maintenance/index';
+@import 'Containers/ManagementContainer/index';
+@import 'Components/MissingItems/index';
+@import 'Components/Menu/index';
+@import 'Components/Modal/index';
+@import 'Components/Schedule/index';
+@import 'Components/Switch/index';
+@import 'Containers/RoomServiceContainer/index';
+@import 'Components/Tabs/index';
+@import 'Components/Textarea/index';
+@import 'Components/TopBar/index';
+@import 'Components/VouchersPage/index';

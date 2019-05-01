@@ -1,0 +1,43 @@
+.mh-input {
+  width: 100%;
+  border: none;
+  box-shadow: $mh-box-shadow;
+  border-radius: $mh-border-radius;
+  padding: 10px 12px;
+  text-align: right;
+  resize: none;
+  box-sizing: border-box;
+  /* Default fonts enforced in text area */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: $mh-grey-dark;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+::-webkit-input-placeholder {
+  color: $mh-grey-light;
+  padding: 0;
+}
+::-moz-placeholder {
+  color: $mh-grey-light;
+  padding: 0;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: $mh-grey-light;
+  padding: 0;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: $mh-grey-light;
+  padding: 0;
+}

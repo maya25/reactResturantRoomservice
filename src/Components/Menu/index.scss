@@ -1,0 +1,101 @@
+.mh-menu {
+  &__header {
+    background: $mh-blue-light;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 64px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    h1 {
+      color: white;
+    }
+  }
+
+  &__navigation {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background: white;
+  }
+
+  &__button {
+    position: relative;
+    top: -45px;
+    margin: 10px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: $mh-grey-light;
+
+    &:active {
+      color: $mh-grey-dark;
+    }
+
+    &:hover {
+      background-color: darken(white, 2%);
+    }
+  }
+
+  &__circles {
+    width: 150%;
+    height: 205px;
+    position: absolute;
+    bottom: -142px;
+    z-index: 0;
+
+    .circle {
+      background: $mh-blue-light;
+      border-radius: 100%;
+      display: inline-flex;
+      position: relative;
+      z-index: 1;
+
+      &-left {
+        width: 143px;
+        height: 143px;
+        background: linear-gradient(
+                        to bottom,
+                        #5893A0 1%,
+                        #86bdc7 10%,
+                        #86bdc7 15%,
+                        #5893A0 35%
+        );
+        bottom: 15px;
+        left: 40px;
+        z-index: 2;
+      }
+
+      &-mid {
+        width: 201px;
+        height: 191px;
+        background: linear-gradient(
+                        to bottom,
+                        #5893A0 1%,
+                        #86bdc7 20%,
+                        #86bdc7 30%,
+                        #5893A0 45%
+        );
+      }
+
+      &-right {
+        width: 170px;
+        height: 168px;
+        background: linear-gradient(to bottom, #74b5c2 1%, rgb(239, 240, 241) 30%);
+        bottom: 5px;
+        right: 27px;
+        z-index: 2;
+      }
+    }
+  }
+}

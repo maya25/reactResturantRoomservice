@@ -1,0 +1,33 @@
+.mh-button {
+  &--menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    height: 150px;
+    background-color: white;
+    border-radius: $mh-border-radius;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  }
+
+  &--submit {
+    background: $mh-blue-light;
+    border-radius: $mh-border-radius--l;
+    border: none;
+    color: white;
+    width: 78px;
+    height: 32px;
+    margin-top: 20px;
+  }
+
+  &--subtle {
+    background: white;
+    color: black;
+    border-radius: $mh-border-radius;
+    border: none;
+    width: 78px;
+    height: 37px;
+    margin-top: 20px;
+  }
+}

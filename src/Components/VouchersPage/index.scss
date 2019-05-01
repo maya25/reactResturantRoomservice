@@ -1,0 +1,31 @@
+.mh-voucher {
+  flex: 1;
+
+  &__code {
+    height: 180px;
+    width: 180px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  &__instructions {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      color: white;
+      text-align: center;
+    }
+
+    p {
+      margin: 0;
+      color: white;
+    }
+  }
+
+  &__icon {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
